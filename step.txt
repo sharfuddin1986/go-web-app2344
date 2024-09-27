@@ -1,0 +1,18 @@
+Clone the repository
+Cd go web app
+Go build -0 main .
+Ls
+./main
+https://Loclhost:8080/course
+
+write dockerfile
+install docker
+docker build –t sharfuddin1986/go-web-app:v1 .
+docker run –dit –p 8080:8080 –name sharfuddin1986/go-web-app:v1 .
+docker push sharfuddin1986/go-web-app:v1
+
+
+creat manifest deployment.yml,service,ingress
+search kubernetees deployment,service and copy 
+crete eks need awscli,eksctl,kubectl install
+create IAM role to root user account
