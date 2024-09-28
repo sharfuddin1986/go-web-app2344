@@ -28,9 +28,12 @@ type kubectl.exe.sha256
 4-kubectl version --client
 5-kubectl version --client --output=yaml
 
-instal ekctl 
-https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-1- curl.exe -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/windows/amd64/kubectl.exe
-2-curl.exe -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.31.0/2024-09-12/bin/windows/amd64/kubectl.exe.sha256
- create cluster
-eksctl create cluster --name demo-cluster --region us-east-1 
+install ekctl 
+
+1- curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+
+
+2-eksctl version
+3-eksctl create cluster --name demo-cluster --region us-east-1 
+
