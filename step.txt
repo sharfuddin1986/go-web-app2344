@@ -8,7 +8,7 @@ https://Loclhost:8080/course
 write dockerfile
 install docker
 docker build –t sharfuddin1986/go-web-app:v1 .
-docker run –dit –p 8080:8080 –name sharfuddin1986/go-web-app:v1 .
+docker run –dit –p 8080:8080 -–name go-web-app  sharfuddin1986/go-web-app:v1 
 docker push sharfuddin1986/go-web-app:v1
 
 
