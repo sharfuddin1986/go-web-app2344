@@ -16,6 +16,7 @@ creat manifest deployment.yml,service,ingress
 search kubernetees deployment,service and copy 
 crete eks need awscli,eksctl,kubectl install
 create IAM role to root user account
+install awscli
 locla windows ;pc install kubectl 
 https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
