@@ -37,3 +37,27 @@ sudo mv /tmp/eksctl /usr/local/bin
 2-eksctl version
 3-eksctl create cluster --name demo-cluster --region us-east-1 
 
+cd go-web-app
+write the deplyoment ingress and service file after deploy
+
+kubectl apply -f k8s/manifests/deployment.yaml
+kubectl apply -f k8s/manifests/service.yaml
+kubectl apply -f k8s/manifests/ingress.yaml
+kubectl get pods
+kubectl get ing   adrees is not assign need to assign address
+kubectl edit svc go-web-app
+cluster to NodePort 
+kubectl get svc
+kubectl get nodes -o wide
+
+
+https://kubernetes.github.io/ingress-nginx/deploy/#aws
+
+nginx contrroller is created
+kubectl get pods -n ingress-nginx
+kubectl edit pod ingress-nginx-controller-7d4db76476-nk7z5 -n ingress-nginx
+
+
+  
+
+
