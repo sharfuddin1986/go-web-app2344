@@ -55,7 +55,34 @@ https://kubernetes.github.io/ingress-nginx/deploy/#aws
 
 nginx contrroller is created
 kubectl get pods -n ingress-nginx
-kubectl edit pod ingress-nginx-controller-7d4db76476-nk7z5 -n ingress-nginx
+
+NAME                                        READY   STATUS      RESTARTS   AGE
+ingress-nginx-admission-create-g6w8t        0/1     Completed   0          7m15s
+ingress-nginx-admission-patch-zcwpn         0/1     Completed   1          7m15s
+ingress-nginx-controller-7d4db76476-nk7z5   1/1     Running     0          7m15s
+
+kubectl edit pod ingress-nginx-controller-7d4db76476-nk7z5 -n ingress-nginx   verify the service name check only 
+kubectl get ing     copy the address of load balancer 
+kubectl get ing
+NAME         CLASS   HOSTS              ADDRESS                                                                         PORTS   AGE
+go-web-app   nginx   go-web-app.local   ae05ea2cf0e77482bba01270bab18647-16e950c8544cd814.elb.us-east-1.amazonaws.com   80      46m
+
+nslookup ae05ea2cf0e77482bba01270bab18647-16e950c8544cd814.elb.us-east-1.amazonaws.com
+
+nslookup ae05ea2cf0e77482bba01270bab18647-16e950c8544cd814.elb.us-east-1.amazonaws.com
+Server:         127.0.0.53
+Address:        127.0.0.53#53
+
+Non-authoritative answer:
+Name:   ae05ea2cf0e77482bba01270bab18647-16e950c8544cd814.elb.us-east-1.amazonaws.com
+Address: 52.207.135.144
+Name:   ae05ea2cf0e77482bba01270bab18647-16e950c8544cd814.elb.us-east-1.amazonaws.com
+Address: 52.86.77.162
+
+
+sudo nano /etc/hosts
+
+
 
 
   
