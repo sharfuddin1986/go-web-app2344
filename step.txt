@@ -1,7 +1,8 @@
 Clone the repository
 Cd go web app
-Go build -0 main .
-Ls
+install go lang 
+ls -al
+go build -o main .
 ./main
 https://Loclhost:8080/course
 
