@@ -38,6 +38,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 
 2-eksctl version
 3-eksctl create cluster --name demo-cluster --region us-east-1 
+  eksctl delete cluster --name demo-cluster --region us-east-1
 
 cd go-web-app
 write the deplyoment ingress and service file after deploy
