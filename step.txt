@@ -84,6 +84,8 @@ Address: 52.86.77.162
 
 sudo nano /etc/hosts
 
+kubectl get pods -n ingress-nginx
+
 
 
 
